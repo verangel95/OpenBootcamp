@@ -8,7 +8,7 @@
     position:relative;
     width:100%;
     text-align:center;
-    top:34vw;
+    top:36vw;
     z-index: 1;
 
 }
@@ -21,6 +21,7 @@
     position:relative;
     left: 25vw;
     top:25vw;
+    z-index:2;
 }
 
 .boton::after{
@@ -33,6 +34,7 @@
     color: white;
     content:"¡Hecho!";
     content-visibility:hidden;
+    z-index:0;
 }
 
 
