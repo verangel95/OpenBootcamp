@@ -1,0 +1,10 @@
+
+
+#elemento-1, #supermercado-1 {
+    color:red;
+}
+
+
+ul li:first-of-type {
+    font-size:2rem;
+}
