@@ -1,0 +1,207 @@
+
+
+$primary-color: rgb(0,117,255);
+
+@mixin btn-config {
+    border-radius: 5px;
+    padding:0.5rem;
+    border:none;
+    font-weight: 500; 
+}
+
+
+//botones
+
+.btn-1{
+    background-color: $primary-color;
+    color:white;
+    width:8.5rem;
+    height:2.5rem;
+    padding:0.5rem;
+    font-size: 0.9rem;
+    @include btn-config();
+
+    &:hover{
+        background-color:white;
+        border:1px solid $primary-color;
+        color: $primary-color;
+    }
+
+
+
+    &-s{
+
+        background-color: $primary-color;
+        color:white;
+        width:6rem;
+        height:2rem;
+        font-size: 0.7rem;
+        @include btn-config();
+    }
+}
+
+
+.btn-2{
+    @include btn-config();
+    background-color: transparent;
+    padding:0;
+    margin:0;
+
+
+    &:hover{
+        background-color:white;
+        color: grey;
+        padding:0;
+        margin:0;
+    }
+
+
+    &-s{
+        @include btn-config();
+        background-color: transparent;
+        font-size:0.7rem
+
+        
+    }
+}
+
+
+//Barra de navegacion
+
+.nav-bar{
+    ul{
+        display:flex;
+        gap:1rem;
+        align-items: center;
+        justify-content: space-around;
+        a{
+            text-decoration: none;
+            color:black;
+            li{
+                list-style: none;
+                font-size: 0.9rem;
+                font-weight: 700;
+            }
+        }
+
+    }
+}
+
+
+// iconos
+
+.icono-1 {
+    color:$primary-color;
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.icono-2{
+    color: $primary-color;
+    font-weight: 700;
+    border-radius: 50%;
+    padding:0.25rem 0.5rem;
+    box-shadow: 0 0 8px black;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.icono-3{
+
+    color:$primary-color;
+    max-width: 40px;
+    max-height: 40px;
+    font-size: 4rem;
+    margin-top: 2rem;
+}
+
+.icono-4{
+
+    color:$primary-color;
+    max-width: 70px;
+    max-height: 70px;
+}
+
+
+
+
+
+// feature
+
+.feature{
+display:flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+
+&-text h6{
+    font-weight: 700;
+    text-align: left;
+}
+
+&-text p{
+    color:rgb(136, 134, 134);
+    font-weight: 500;
+    font-size:0.8rem;
+    text-align: left;
+}
+}
+
+.flujo-ventajas{
+    h5{
+        color:rgb(167, 160, 160);
+        font-weight: 500;
+        font-size:1.25rem;
+        text-align: center;
+    }
+}
+
+.ventaja{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    i {
+        color:$primary-color;
+        font-size: 3rem;
+        margin-bottom:3rem;
+    }
+
+    .ventaja-text{
+
+        h6{    
+            font-weight: 700;
+            text-align: center;
+            font-size:1.3rem;
+        
+        }
+        p{
+            color:rgb(136, 134, 134);
+            font-weight: 400;
+            font-size:0.75rem;
+            text-align: center;
+        }
+    }
+
+    p{
+        margin-bottom:3rem;
+    }
+
+    span{
+        font-size: 0.85rem;
+        font-weight: 400;
+    }
+}
+
+
+//separador 
+
+.separador{
+        list-style: none;
+        flex-grow: 1;
+        border-top: 2px solid rgb(230, 224, 224);
+}
