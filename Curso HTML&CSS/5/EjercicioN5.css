@@ -1,0 +1,16 @@
+*{
+   padding:none;
+   margin:none; 
+}
+
+.contenedor{
+    width:100%s;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+
+img{
+    width:300px;
+}
