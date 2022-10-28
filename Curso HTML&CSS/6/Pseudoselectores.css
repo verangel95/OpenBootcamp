@@ -1,0 +1,40 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+ .div{
+    color: white;
+    position:relative;
+    width:100%;
+    text-align:center;
+    top:36vw;
+    z-index: 1;
+
+}
+
+.boton{
+    color:yellowgreen;
+    background-color: black;
+    width:50vw;
+    height:20vw;
+    position:relative;
+    left: 25vw;
+    top:25vw;
+    z-index:2;
+}
+
+.boton::after{
+    content:"Pasa por encima";
+}
+
+.boton:hover{
+
+    background-color: green;
+    color: white;
+    content:"¡Hecho!";
+    content-visibility:hidden;
+    z-index:0;
+}
+
+

@@ -1,0 +1,204 @@
+
+@use "componentes"; 
+
+//seccion de navegacion
+
+.nav{
+    display:flex;
+    justify-content: space-around;
+    margin-top:2rem;
+    width:100%;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.45rem;
+
+  
+      }
+
+
+
+
+.butons{
+    display:flex;
+    gap:30px;
+}
+
+
+//seccion Home
+
+.home{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:80%;
+    margin:auto;
+    margin-top:7rem;
+    gap:10rem;
+    .jump{
+        width:40%;
+        .text-blue{
+            color:componentes.$primary-color;
+            font-weight: bolder;
+            font-size: 1rem;
+            padding:0;
+            margin:0;
+
+            i{
+                font-size:1.2rem;
+            }
+        }
+        
+        .text-big{
+
+            font-size: 4rem;
+            font-size: bolder;
+
+        }
+
+        .text-desc{
+            font-weight: bolder;
+            color:black;
+        }
+
+
+
+        .inputs{
+            margin-top:20px;
+
+            #Email{
+                outline: none;
+                border-radius:0.25rem;
+                border:1px solid rgb(201, 195, 195);
+
+                &:hover{
+                    box-shadow:0 0 0 1px rgb(170, 166, 166);
+                }
+
+                &:focus{
+                    box-shadow:0 0 0 1px rgb(170, 166, 166);
+                }
+
+            }
+
+        }
+
+    }
+}
+
+// seccion beneficios
+
+.beneficios{
+    margin-top: 7rem;
+    text-align: center;
+    h5{
+        color:rgb(167, 160, 160);
+    }
+}
+
+
+// seccion ventajas
+
+.ventajas{
+    margin: 6rem 0;
+}
+
+
+//seccion indicadores
+
+.indicadores{
+
+    padding: 2rem 0;
+    margin: 0 0 6rem 0;
+}
+
+.medida-text{
+    font-size:0.7rem;
+}
+
+
+// seccion get-started 
+
+.get-started{
+
+    margin-top: 3rem;
+    h5{
+        color:rgb(167, 160, 160);
+        margin-bottom: 2rem;
+    }
+
+    .process-line{
+
+        margin-top: 7rem;
+
+        .span-procesos{
+            margin-top: 1.5rem;
+            font-size:1rem;
+        }
+    }
+}
+
+
+.footer{
+
+    margin-top:12rem;
+    height:400px;
+    background-color: #F4F7FE;
+    background-image: url("/Public/Img/bg\ 1.png");
+    background-repeat: no-repeat;
+    background-position: right;
+
+    &-container{
+        margin-left:14rem;
+    }
+
+}
+
+
+//responsive
+@media (max-width: 800px) {
+    .nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:2rem;
+    }
+
+    .nav-bar ul{
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0;
+        margin-top:2rem;
+    }
+
+    .nav .butons {
+
+        flex-direction: column;
+        justify-content: center;
+        gap:1rem;
+        margin-top:2rem;
+    }
+
+    .jump{
+        flex-grow:1;
+        text-align: center;
+        gap:1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inputs button{
+
+        margin: 0 auto;
+    }
+
+    .footer{
+        background-image: none;
+    }
+
+    .footer .jump{
+
+        margin: 0 auto;
+    }
+
+
+    }
